@@ -16,3 +16,14 @@ game.CoreGui.ChildAdded:Connect(function(child)
         child.ChildAdded:Connect(onChildAdded)
     end
 end)
+
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+
+wait(1);
+
+Notify({
+Description = "Rejoin on disconnect loaded";
+Title = "d11voqii#5147";
+Duration = 5;
+});
